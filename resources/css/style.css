@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Itimfamily=Fredoka:wght@300&family=Roboto+Mono:ital,wght@1,500&family=Smooch+Sans:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Josefin+Sans:ital,wght@1,200&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -139,6 +139,32 @@ body{
     border-radius: 10px;
 }
 
+/* Carousel caption */
+
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+    bottom:50%
+}
+
+.carousel-caption h5{
+    font-size: 50px;
+    font-family: 'Itim', cursive;
+
+
+}
+
+.carousel-caption p{
+    font-size: 30px;
+    font-family: 'Itim', cursive;
+
+}
+
+.carousel-color h5{
+    color: rgb(238, 223, 85);
+    font-size: 90px;
+}
+
 
 /* Cards */
 .room-cards{
@@ -152,7 +178,7 @@ body{
     height: 50px;
     text-align: center;
     color: rgb(66, 121, 223);
-    font-family: cursive;
+    font-family: 'Itim', cursive;
     font-size: 40px;
 }
 
@@ -193,9 +219,6 @@ body{
     color: #ffa127;
 }
 
-/* .card-body span i{
-    color: gold;
-} */
 
 /* Facilities */
 
@@ -229,7 +252,7 @@ body{
 .foot h5{
     font-size: 30px;
     color: rgb(66, 121, 223);
-    font-family: cursive;
+    font-family: 'Itim', cursive;
     margin-top: 20px;
     margin-bottom: 15px;
 
@@ -274,12 +297,236 @@ body{
     margin-left: 10px;
 }
 
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 325px;
+    width: 400px;
+  }
 
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 325px;
+    width: 400px;
+  }
 
 
 
 /* media queries */
 /* for form */
+
+@media only screen and (max-width: 450px){
+    .nav-brand h1, .navbar span{
+        font-size: 22px;
+    }
+
+    .navbar-toggler{
+        padding: 0px; 
+        font-size: 20px;
+    }
+
+    .book-form .form-close button{
+        width: auto;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+
+.facility{
+    padding:0px;
+}
+.icon-img img{
+    width: 10%;
+    margin: 3px;
+}
+
+.icon-img{
+    justify-content: center;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+.social-icons a i{
+    font-size: 20px;
+    margin: 15px;
+}
+
+.mapouter{
+    width: 100%;
+    
+}
+
+.gmap_canvas {
+    height: 280px;
+    width: auto;
+    padding-right:10px;
+  }
+
+  .contact-us .table tr td{
+      display: block;
+  }
+
+  .app-img{
+      text-align: center;
+  }
+
+  .app-img a img{
+      width: 50%;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 1115px){
+    .social-icons a i{
+        font-size: 30px;
+        margin: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 992px){
+
+.deluxe-room .deluxe-2-col{
+    background-color: rgb(250, 215, 245);
+    font-family: 'Itim', cursive;
+    font-size: 17px;
+}
+
+/* Carousel caption */
+
+.carousel-caption{
+    top: 20%;
+    bottom:0;
+}
+
+}
+
+@media only screen and (max-width: 865px){
+    
+.carousel-caption{
+    top: 0;
+    bottom:0;
+}
+
+.carousel-color h5{
+    font-size: 70px;
+}
+}
+
+
+@media only screen and (max-width: 667px){
+    
+    
+    .carousel-caption h5{
+        font-size: 40px;
+    
+    
+    }
+    
+    .carousel-caption p{
+        font-size: 24px;
+    
+    }
+    
+    .carousel-color h5{
+        font-size: 55px;
+    }
+    }
+    
+    @media only screen and (max-width: 667px){
+    
+    
+        .carousel-caption h5{
+            font-size: 30px;
+        
+        
+        }
+        
+        .carousel-caption p{
+            font-size: 18px;
+        
+        }
+        
+        .carousel-color h5{
+            font-size: 40px;
+        }
+        }
+
+        @media only screen and (max-width: 426px){
+    
+    
+            .carousel-caption h5{
+                font-size: 25px;
+            
+            
+            }
+            
+            .carousel-caption p{
+                font-size: 18px;
+            
+            }
+            
+            .carousel-color h5{
+                font-size: 35px;
+            }
+            }
+            @media only screen and (max-width: 390px){
+    
+    
+                .carousel-caption h5{
+                    font-size: 20px;
+                
+                
+                }
+                
+                .carousel-caption p{
+                    font-size: 16px;
+                
+                }
+                
+                .carousel-color h5{
+                    font-size: 30px;
+                }
+                }
+                @media only screen and (max-width: 347px){
+    
+    
+                    .carousel-caption h5{
+                        font-size: 20px;
+                    
+                    
+                    }
+                    
+                    .carousel-caption p{
+                        font-size: 16px;
+                    
+                    }
+                    
+                    .carousel-color h5{
+                        font-size: 28px;
+                    }
+
+                    .carousel-indicators{
+                        display: none;
+                    }
+                    }
+
+@media only screen and (max-width: 840px) and (min-width:550px){
+    .social-icons a i{
+        font-size: 30px;
+        margin: 10px;
+    }
+
+}
+
+
+
 
 @media only screen and (max-width: 590px){
     .book-form{
@@ -362,7 +609,7 @@ body{
     height: 300px;
     align-items: center;
     color: rgb(170, 230, 230);
-    font-family: cursive;
+    font-family: 'Itim', cursive;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -374,7 +621,7 @@ body{
 
 .about-align{
     align-items: center;
-    font-family: cursive;
+    font-family: 'Itim', cursive;
 }
 
 .about-align h2{
@@ -392,7 +639,8 @@ body{
 
 .deluxe-room{
     background-color: rgb(250, 215, 245);
-    font-family: cursive;
+    font-family: 'Itim', cursive;
+    font-size: 20px;
 }
 
 .deluxe-align{
@@ -435,7 +683,7 @@ body{
 .chat{
     margin: auto  auto 5px;
     font-size: 15px;
-    font-family: cursive;
+    font-family: 'Itim', cursive;
 
 }
 
