@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasar Resorts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./resources/css/room-booking.css">
+
+
+</head>
+
+<body>
+    <!-- Navingation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+
+            <a href="index.html" class="navbar-brand">
+                <h1>PS</h1>
+                <span>Prasar Resorts</span>
+            </a>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav small-nav">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <div class="dropdown">
+                        <a class="nav-link nav-item dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Rooms
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="./deluxe-room.html">Deluxe Rooms</a>
+                            <a class="dropdown-item" href="./Luxury-room.html">Luxury Rooms</a>
+                            <a class="dropdown-item" href="./presidential-villa.html">Presidential Villa</a>
+
+                        </div>
+                    </div>
+                    <a href="./about.html" class="nav-item nav-link active">About Us</a>
+                    <a href="./contactj.html" class="nav-item nav-link">Contact</a>
+
+                    <!-- Room booking form -->
+
+                    <button class="btn btn-primary" onclick="openForm()">Book A Room</button>
+
+
+                    <div class="book-form" id="hide-form">
+                        <form action="POST">
+
+                            <label for="check-in">Check In</label>
+                            <input type="date" name="check-in" id="check-in">
+                            <br class="hide-check-in">
+
+                            <label for="check-out">Check Out</label>
+                            <input type="date" name="check-out" id="check-out">
+                            <br>
+                            <label for="rooms">Select room</label>
+                            <select id="rooms" name="rooms">
+                                <option value="garden">Garden Room</option>
+                                <option value="family">Family Room</option>
+                                <option value="single">Single Room</option>
+                                <option value="Luxury">Luxury Room</option>
+                            </select>
+                            <select name="no-of-rooms" id="no-of-rooms">
+                                <option value="1"><span class="big-no">01</span> Room</option>
+                                <option value="2"><span class="big-no">02</span> Rooms</option>
+                                <option value="3"><span class="big-no">03</span> Rooms</option>
+                            </select>
+
+                            <select name="no-of-guests" id="no-of-guests">
+                                <option value="1"><span class="big-no">01</span> Guest</option>
+                                <option value="2"><span class="big-no">02</span> Guests</option>
+                                <option value="3"><span class="big-no">03</span> Guests</option>
+                            </select>
+                            <select name="no-of-kids" id="no-of-kids">
+                                <option value="1"><span class="big-no">01</span> Kid</option>
+                                <option value="2"><span class="big-no">02</span> Kids</option>
+                                <option value="3"><span class="big-no">03</span> Kids</option>
+                            </select>
+                            <div class="form-close">
+                                <button type="button" class="btn btn-primary">Search</button>
+                                <button type="button" class="btn btn-primary" onclick="closeForm()">Close</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </nav>
+    <!-- About -->
+    <div class="about-whole">
+        <div class="container-fluid">
+            <div class="row about-mid">
+                <div class="col about-page-img">
+                    <h1>About Us</h1>
+                    <h6>EXPERIENCE THE ENCHANTING COLOURS OF GOA</h6>
+                </div>
+            </div>
+            <div class="row about-align">
+                <div class="col-md-6 about-2-row">
+                    <h2>THE PRASAR RESORTS</h2>
+                    <P>Every time you visit The Prasar Resort, you get a feel of highest level of luxury, comfort and
+                        class,
+                        which makes your holiday experience a memorable one.</P>
+                    <p>The Prasar Resort has 42 Executive rooms, which are equal to the rooms of any 5 star resorts in
+                        Goa,
+                        and 8 Studio rooms which are as good as any International standard 5 star resorts in the world.
+                    </p>
+
+
+                    <p> Maintaining the highest standards yet having the friendliest nature the staff of The Prasar
+                        Resort,
+                        will always ensure that our guests are always satisfied, making their dream holiday come true.
+                    </P>
+                </div>
+                <div class="col-md-6">
+                    <h2>Our Gallery</h2>
+                    <!-- Carousel -->
+
+                    <div id="carouselExampleIndicators" class="carousel slide reduce-carousel" onclick="closeForm()"
+                        data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"></li>
+
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./resources/images/room-1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./resources/images/room-2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./resources/images/room-3.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./resources/images/room-4.jpg" alt="Fourth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./resources/images/room-5.jpg" alt="Fifth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./resources/images/room-6.jpg" alt="Sixth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./resources/images/room-7.jpg" alt="Seventh slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row foot">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Prasar Beach Resort is one of the finest luxury beach hotels in Goa. As one of the first few five
+                        star
+                        hotels in Goa, with high ceilings that are an architectural treat and vantage points that offer
+                        breath-taking views of the sea, sand and is in the midst of lush greenery around the property.
+                    </p>
+                    <a href="./about.html">To know more</a>
+                </div>
+                <div class="col-md-4  for-mar">
+                    <h5>Contact Info</h5>
+                    <p><i class="fa fa-map-marker"></i>77, TN Road, Ocean view Point, Goa, India</p>
+                    <p><i class="fa fa-phone"></i>+91 90707 70709</p>
+                    <p><i class="fa fa-envelope"></i>info@prasarresorts.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Subscribe</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter your email">
+                        <span class="btn btn-primary"><i class="fa fa-search"></i></span>
+                    </div>
+                    <div class="app-img">
+                        <a href="#"><img src="./resources/images/Google-Play.png" alt="google play"></a>
+                        <a href="#"><img src="./resources/images/Apple-app-store.png" alt="apple app"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function openForm() {
+            document.getElementById("hide-form").style.display = "block";
+
+        }
+
+        function closeForm() {
+            document.getElementById("hide-form").style.display = "none";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

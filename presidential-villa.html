@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasar Resorts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./resources/css/room-booking.css">
+
+
+</head>
+
+<body>
+    <!-- Navingation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+
+            <a href="index.html" class="navbar-brand">
+                <h1>PS</h1>
+                <span>Prasar Resorts</span>
+            </a>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav small-nav">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <div class="dropdown">
+                        <a class="nav-link nav-item active dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Rooms
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="./deluxe-room.html">Deluxe Rooms</a>
+                            <a class="dropdown-item" href="./Luxury-room.html">Luxury Rooms</a>
+                            <a class="dropdown-item active" href="./presidential-villa.html">Presidential Villa</a>
+
+                        </div>
+                    </div>
+                    <a href="./about.html" class="nav-item nav-link">About Us</a>
+                    <a href="./contactj.html" class="nav-item nav-link">Contact</a>
+
+                    <!-- Room booking form -->
+
+                    <button class="btn btn-primary" onclick="openForm()">Book A Room</button>
+
+
+                    <div class="book-form" id="hide-form">
+                        <form action="POST">
+
+                            <label for="check-in">Check In</label>
+                            <input type="date" name="check-in" id="check-in">
+                            <br class="hide-check-in">
+
+                            <label for="check-out">Check Out</label>
+                            <input type="date" name="check-out" id="check-out">
+                            <br>
+                            <label for="rooms">Select room</label>
+                            <select id="rooms" name="rooms">
+                                <option value="garden">Garden Room</option>
+                                <option value="family">Family Room</option>
+                                <option value="single">Single Room</option>
+                                <option value="Luxury">Luxury Room</option>
+                            </select>
+                            <select name="no-of-rooms" id="no-of-rooms">
+                                <option value="1"><span class="big-no">01</span> Room</option>
+                                <option value="2"><span class="big-no">02</span> Rooms</option>
+                                <option value="3"><span class="big-no">03</span> Rooms</option>
+                            </select>
+
+                            <select name="no-of-guests" id="no-of-guests">
+                                <option value="1"><span class="big-no">01</span> Guest</option>
+                                <option value="2"><span class="big-no">02</span> Guests</option>
+                                <option value="3"><span class="big-no">03</span> Guests</option>
+                            </select>
+                            <select name="no-of-kids" id="no-of-kids">
+                                <option value="1"><span class="big-no">01</span> Kid</option>
+                                <option value="2"><span class="big-no">02</span> Kids</option>
+                                <option value="3"><span class="big-no">03</span> Kids</option>
+                            </select>
+                            <div class="form-close">
+                                <button type="button" class="btn btn-primary">Search</button>
+                                <button type="button" class="btn btn-primary" onclick="closeForm()">Close</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </nav>
+    <!-- Presidential Villa -->
+    <div class="deluxe-room" onclick="closeForm()">
+        <div class="container-fluid ">
+            <div class="row deluxe-align">
+                <div class="col-md-6">
+                    <h1>Presidential Villa</h1>
+                    <p>Contemporary style and timeless hospitality.</p>
+                    <img src="./resources/images/Deluxe-room.jpg" alt="luxury">
+                </div>
+                <div class="col-md-6 deluxe-2-col">
+                    <p>Fit for royalty, every inch of this vast suite with 334 square metres interiors, has been
+                        designed with your utmost comfort in mind. Natural light flows through the master bedroom and
+                        adjoining twin room, the private dressing room, comfortable living and dining areas, private
+                        study and pantry. And for your relaxation, there is a heated outdoor pool and a terrace with
+                        views of the Goa skyline. Eclectic modern artworks abound adding a touch of class.</p>
+                    <table class="table">
+                        <tr>
+                            <td><strong>View</strong></td>
+                            <td>
+                                <p>Sea and Pool</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Private Pool</strong></td>
+                            <td>
+                                <p>Yes</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bed Type</strong></td>
+                            <td>
+                                <p>King and Twin</p>
+                            </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td><strong>Total Room Size</strong>
+                            </td>
+                            <td>
+                                <p> 493 square metres
+                                    The size includes both interior and exterior private space of the room.</p>
+                            </td>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row foot">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Prasar Beach Resort is one of the finest luxury beach hotels in Goa. As one of the first few five
+                        star
+                        hotels in Goa, with high ceilings that are an architectural treat and vantage points that offer
+                        breath-taking views of the sea, sand and is in the midst of lush greenery around the property.
+                    </p>
+                    <a href="about.html">To know more</a>
+                </div>
+                <div class="col-md-4  for-mar">
+                    <h5>Contact Info</h5>
+                    <p><i class="fa fa-map-marker"></i>77, TN Road, Ocean view Point, Goa, India</p>
+                    <p><i class="fa fa-phone"></i>+91 90707 70709</p>
+                    <p><i class="fa fa-envelope"></i>info@prasarresorts.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Subscribe</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter your email">
+                        <span class="btn btn-primary"><i class="fa fa-search"></i></span>
+                    </div>
+                    <div class="app-img">
+                        <a href="#"><img src="./resources/images/Google-Play.png" alt="google play"></a>
+                        <a href="#"><img src="./resources/images/Apple-app-store.png" alt="apple app"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function openForm() {
+            document.getElementById("hide-form").style.display = "block";
+
+        }
+
+        function closeForm() {
+            document.getElementById("hide-form").style.display = "none";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
