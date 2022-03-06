@@ -96,7 +96,8 @@ body{
     padding: 20px 5px;
     color: rgb(12, 12, 8);
     border-radius: 20px;
-    font-family: cursive;
+    font-family: 'Itim', cursive;
+
     font-size: 19.5px;
 
 }    
@@ -122,6 +123,8 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+
 
 
 .hide-check-in{
@@ -185,7 +188,7 @@ body{
 .card{
     margin-top: 15px;
     margin-bottom: 15px;
-    height: 500px;
+    height: auto;
     border: 1px solid rgb(212, 182, 182);
     border-radius: 10px;
     background-color: rgb(209, 212, 243);
@@ -194,7 +197,7 @@ body{
 }
 
 .card img{
-    width: 100%;
+    width: auto;
     height: 250px;
     border-radius: 9px 9px 0 0;
     transition: all 0.5s ease-in-out;
@@ -295,6 +298,7 @@ body{
 
 .app-img{
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .mapouter {
@@ -370,12 +374,14 @@ body{
       display: block;
   }
 
+  
   .app-img{
       text-align: center;
   }
 
   .app-img a img{
       width: 50%;
+      margin-bottom: 10px;
   }
 
 
@@ -438,6 +444,27 @@ body{
         font-size: 55px;
     }
     }
+
+    @media only screen and (max-width: 767px){
+        .card, .card-img-top{
+            width: auto;
+            height: auto;
+        }
+
+        .card-body h5{
+            font-size: 23px;
+        }
+        
+        .card-body p{
+            font-size: 15px;
+
+        }
+
+        .facility{
+            font-size: 19px;
+        }
+    }
+
     
     @media only screen and (max-width: 667px){
     
@@ -456,6 +483,28 @@ body{
         .carousel-color h5{
             font-size: 40px;
         }
+
+        .foot h5{
+            font-size: 25px;
+            
+        
+        }
+        
+        .foot p{
+            font-size: 14px;
+            
+        }
+
+        .for-mar h5{
+            font-size: 25px;
+
+        }
+
+        .for-mar p{
+            font-size: 14px;
+
+        }
+
         }
 
         @media only screen and (max-width: 426px){
@@ -493,6 +542,12 @@ body{
                 .carousel-color h5{
                     font-size: 30px;
                 }
+
+                .about-image{
+                    width: 97%;
+                }
+                
+
                 }
                 @media only screen and (max-width: 347px){
     
@@ -535,6 +590,21 @@ body{
         right: 10%;
     }    
     
+}
+
+@media only screen and (max-width: 767px) and (min-width:583px){
+    .app-img img[alt="google play"]{
+        margin-left: 50px;
+    }
+    
+    .app-img img[alt="apple app"]{
+        float: right;
+        margin-right: 80px;
+    }
+
+    .facility{
+        font-size: 21px;
+    }
 }
 
 @media only screen and (max-width: 991px){
@@ -591,6 +661,15 @@ body{
     margin: 0;
 
     
+}
+
+.card-body h5{
+    font-size: 23px;
+}
+
+.card-body p{
+    font-size: 15px;
+
 }
 
 }
@@ -677,7 +756,8 @@ body{
 .contact-us{
     margin: auto;
     font-size: 15px;
-    font-family: cursive;
+    font-family: 'Itim', cursive;
+
 }
 
 .chat{
